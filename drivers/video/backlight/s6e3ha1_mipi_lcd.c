@@ -1725,6 +1725,8 @@ static int s6e3ha1_probe(struct mipi_dsim_device *dsim)
 
 	dev_info(&lcd->ld->dev, "%s lcd panel driver has been probed.\n", __FILE__);
 
+    s6e3ha1_power_on(lcd); 
+
 	return 0;
 
 out_free_backlight:
