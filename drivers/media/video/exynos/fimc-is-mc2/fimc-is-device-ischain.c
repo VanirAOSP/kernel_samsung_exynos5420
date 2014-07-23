@@ -791,7 +791,7 @@ void fimc_is_ischain_savefirm(struct fimc_is_device_ischain *this)
 #ifdef DEBUG_DUMP_FIRMWARE
 	loff_t pos;
 
-	write_data_to_file("/data/firmware.bin", (char *)this->imemory.kvaddr,
+	write_data_to_file("/data/camera/firmware.bin", (char *)this->imemory.kvaddr,
 		(size_t)FIMC_IS_A5_MEM_SIZE, &pos);
 #endif
 }
