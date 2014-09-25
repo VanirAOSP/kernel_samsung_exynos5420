@@ -96,6 +96,8 @@
 #define V4L2_CID_TV_HDMI_STATUS		(V4L2_CID_EXYNOS_BASE + 66)
 #define V4L2_CID_TV_SOURCE_PHY_ADDR	(V4L2_CID_EXYNOS_BASE + 67)
 #define V4L2_CID_TV_BLANK           (V4L2_CID_EXYNOS_BASE + 68)
+#define V4L2_CID_TV_MAX_AUDIO_CHANNELS V4L2_CID_TV_GET_AUDIO_INFORM /* for compatibility with older code */
+#define V4L2_CID_TV_SET_NUM_CHANNELS V4L2_CID_TV_SET_AUDIO_INFORM /* for compatibility with older code */
 
 /* for color space conversion equation selection */
 #define V4L2_CID_CSC_EQ_MODE		(V4L2_CID_EXYNOS_BASE + 100)
