@@ -89,7 +89,6 @@
 #define FIMC_IS_FW				"fimc_is_fw2.bin"
 #define FIMC_IS_FW_3L2				"fimc_is_fw2_3L2.bin"
 #define FIMC_IS_FW_IMX134			"fimc_is_fw2_IMX134.bin"
-#define FIMC_IS_FW_IMX134_EEPROM		"fimc_is_fw2_IMX134_EEPROM.bin"
 #define FIMC_IS_FW_SDCARD			"/data/camera/fimc_is_fw2.bin"
 #define FIMC_IS_IMX135_SETF			"setfile_imx135.bin"
 #define FIMC_IS_IMX134_SETF			"setfile_imx134.bin"
@@ -105,13 +104,7 @@
 
 #define FIMC_IS_CAL_SDCARD			"/data/camera/cal_data.bin"
 
-#ifdef CONFIG_CAMERA_EEPROM
-#define FIMC_IS_MAX_FW_SIZE			(8 * 1024)
-#define HEADER_CRC32_LEN			(80 / 2)
-#define OEM_CRC32_LEN				(64 / 2)
-#define AWB_CRC32_LEN				(32 / 2)
-#define SHADING_CRC32_LEN			(6623 / 2)
-#else
+/*#define FIMC_IS_MAX_CAL_SIZE (20 * 1024)*/
 #define FIMC_IS_MAX_FW_SIZE			(2048 * 1024)
 #define FIMC_IS_CAL_START_ADDR			(0x013D0000)
 #define FIMC_IS_CAL_RETRY_CNT			(2)
